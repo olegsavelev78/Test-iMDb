@@ -13,6 +13,16 @@
 		E7945EBC2693238C0018EEAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7945EBA2693238C0018EEAB /* Main.storyboard */; };
 		E7945EBE2693238E0018EEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7945EBD2693238E0018EEAB /* Assets.xcassets */; };
 		E7945EC12693238E0018EEAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7945EBF2693238E0018EEAB /* LaunchScreen.storyboard */; };
+		E7945EC9269325800018EEAB /* SearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7945EC82693257F0018EEAB /* SearchData.swift */; };
+		E7945ECB269326630018EEAB /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7945ECA269326630018EEAB /* Network.swift */; };
+		E7945ECD269331D60018EEAB /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7945ECC269331D60018EEAB /* NetworkDataFetcher.swift */; };
+		E7945ECF269334CD0018EEAB /* DataFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7945ECE269334CD0018EEAB /* DataFetcherService.swift */; };
+		E7945ED8269358230018EEAB /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7945ED7269358230018EEAB /* MovieTableViewCell.swift */; };
+		E7945EDA269367440018EEAB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7945ED9269367440018EEAB /* DetailViewController.swift */; };
+		E7945EDC269444A10018EEAB /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7945EDB269444A10018EEAB /* MovieData.swift */; };
+		E7945EE0269487630018EEAB /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7945EDF269487630018EEAB /* ModalViewController.swift */; };
+		E7945EE22695872C0018EEAB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7945EE12695872C0018EEAB /* WebViewController.swift */; };
+		E7D20EBF2695AE39004C88F6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D20EBE2695AE39004C88F6 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		E7945EBD2693238E0018EEAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7945EC02693238E0018EEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7945EC22693238E0018EEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7945EC82693257F0018EEAB /* SearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchData.swift; sourceTree = "<group>"; };
+		E7945ECA269326630018EEAB /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		E7945ECC269331D60018EEAB /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		E7945ECE269334CD0018EEAB /* DataFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
+		E7945ED7269358230018EEAB /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		E7945ED9269367440018EEAB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E7945EDB269444A10018EEAB /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
+		E7945EDF269487630018EEAB /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		E7945EE12695872C0018EEAB /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		E7D20EBE2695AE39004C88F6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,65 @@
 		E7945EB32693238C0018EEAB /* Test UD */ = {
 			isa = PBXGroup;
 			children = (
+				E7945ED4269349870018EEAB /* NetworkService */,
+				E7945EE3269589FA0018EEAB /* Controllers */,
+				E7945ED32693497A0018EEAB /* Model */,
+				E7945ED62693580F0018EEAB /* View */,
+				E7945ED5269349B60018EEAB /* Supporting files */,
+			);
+			path = "Test UD";
+			sourceTree = "<group>";
+		};
+		E7945ED32693497A0018EEAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7945EC82693257F0018EEAB /* SearchData.swift */,
+				E7945EDB269444A10018EEAB /* MovieData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E7945ED4269349870018EEAB /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				E7945ECA269326630018EEAB /* Network.swift */,
+				E7945ECC269331D60018EEAB /* NetworkDataFetcher.swift */,
+				E7945ECE269334CD0018EEAB /* DataFetcherService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		E7945ED5269349B60018EEAB /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				E7945EB42693238C0018EEAB /* AppDelegate.swift */,
 				E7945EB62693238C0018EEAB /* SceneDelegate.swift */,
-				E7945EB82693238C0018EEAB /* ViewController.swift */,
-				E7945EBA2693238C0018EEAB /* Main.storyboard */,
 				E7945EBD2693238E0018EEAB /* Assets.xcassets */,
 				E7945EBF2693238E0018EEAB /* LaunchScreen.storyboard */,
 				E7945EC22693238E0018EEAB /* Info.plist */,
 			);
-			path = "Test UD";
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		E7945ED62693580F0018EEAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7945ED7269358230018EEAB /* MovieTableViewCell.swift */,
+				E7945EBA2693238C0018EEAB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7945EE3269589FA0018EEAB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E7945EB82693238C0018EEAB /* ViewController.swift */,
+				E7D20EBE2695AE39004C88F6 /* Extensions.swift */,
+				E7945EDF269487630018EEAB /* ModalViewController.swift */,
+				E7945ED9269367440018EEAB /* DetailViewController.swift */,
+				E7945EE12695872C0018EEAB /* WebViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +207,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7945EDA269367440018EEAB /* DetailViewController.swift in Sources */,
+				E7945ECD269331D60018EEAB /* NetworkDataFetcher.swift in Sources */,
+				E7945ECF269334CD0018EEAB /* DataFetcherService.swift in Sources */,
+				E7945EE0269487630018EEAB /* ModalViewController.swift in Sources */,
+				E7D20EBF2695AE39004C88F6 /* Extensions.swift in Sources */,
+				E7945ECB269326630018EEAB /* Network.swift in Sources */,
 				E7945EB92693238C0018EEAB /* ViewController.swift in Sources */,
+				E7945EDC269444A10018EEAB /* MovieData.swift in Sources */,
+				E7945EE22695872C0018EEAB /* WebViewController.swift in Sources */,
 				E7945EB52693238C0018EEAB /* AppDelegate.swift in Sources */,
+				E7945EC9269325800018EEAB /* SearchData.swift in Sources */,
+				E7945ED8269358230018EEAB /* MovieTableViewCell.swift in Sources */,
 				E7945EB72693238C0018EEAB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +368,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKG3CKHF53;
-				INFOPLIST_FILE = "Test UD/Info.plist";
+				INFOPLIST_FILE = "Test UD/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKG3CKHF53;
-				INFOPLIST_FILE = "Test UD/Info.plist";
+				INFOPLIST_FILE = "Test UD/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
